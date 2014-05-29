@@ -27,7 +27,7 @@ public class TransferRequestHandler implements Runnable{
 				{
 					try
 					{
-					System.out.println("Waiting for Command ...");
+					System.out.println("Waiting for Command Server...");
 					String Command=din.readUTF();
 					if(Command.compareTo("GET")==0)
 					{
@@ -75,7 +75,7 @@ public class TransferRequestHandler implements Runnable{
 				}
 				while(ch!=-1);	
 				fin.close();
-				dout.writeUTF(f.length()+"bytes Send Successfully");							
+				dout.writeUTF("bytes Send Successfully");							
 			}
 		}
 	}
