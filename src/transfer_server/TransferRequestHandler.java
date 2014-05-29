@@ -43,6 +43,7 @@ public class TransferRequestHandler implements Runnable{
 					}
 					catch(Exception ex)
 					{
+						break;
 					}
 				}
 				
