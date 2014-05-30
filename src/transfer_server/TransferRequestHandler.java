@@ -57,7 +57,14 @@ public class TransferRequestHandler implements Runnable{
 		void SendFile() throws Exception
 		{		
 			String filename=din.readUTF();
-			String file_path = "C:\\Users\\Alberto\\workspace\\Transfer_server\\Content\\"+filename;
+			String sSistemaOperativo = System.getProperty("os.name");
+			 String file_path = null;
+			 if(sSistemaOperativo.startsWith("Win")){
+				 file_path = ".\\Transfer_Content\\"+filename;
+			 }
+			 else {
+				 file_path = "./Transfer_Content/"+filename;
+			 }
 			File f=new File(file_path);			
 			if(!f.exists())
 			{
