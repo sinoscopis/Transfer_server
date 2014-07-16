@@ -60,6 +60,7 @@ public class TransferRequestHandler implements Runnable{
 			String sSistemaOperativo = System.getProperty("os.name");
 			 String file_path = null;
 			 if(sSistemaOperativo.startsWith("Win")){
+				 //file_path = "C:\\Users\\Alberto\\Desktop\\Transfer_Content\\"+filename;
 				 file_path = ".\\Transfer_Content\\"+filename;
 			 }
 			 else {
