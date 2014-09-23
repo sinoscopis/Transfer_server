@@ -9,7 +9,7 @@ import java.io.*;
  */
 public class Transfer_Server extends Thread
 { //Arbitrary port number
-	final static int _transferPort = 55055;
+	final static int _transferPort = 44444;
 	private Socket _socket = null;
 	private Socket _transfersocket = null;
 	private PrintWriter _out = null;

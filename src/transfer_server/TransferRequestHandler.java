@@ -16,7 +16,7 @@ public class TransferRequestHandler implements Runnable{
 		}
  
 		public void run() {
-			System.out.println("Client connected to socket: " + _socket.toString());
+			System.out.println("Client connected to transfer socket: " + _socket.toString());
  
 			try {
 				din=new DataInputStream(_socket.getInputStream());
