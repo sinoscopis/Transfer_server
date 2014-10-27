@@ -1,3 +1,7 @@
+/*
+ * Realiza la transferrencia del contenido a las caches
+ */
+
 package transfer_server;
 
 import java.io.DataInputStream;

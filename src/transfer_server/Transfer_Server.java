@@ -1,3 +1,7 @@
+/*
+ * Servidor de transferencia, abre el socket y espera a transferir el contenido
+ */
+
 package transfer_server;
 
 import java.net.*;
